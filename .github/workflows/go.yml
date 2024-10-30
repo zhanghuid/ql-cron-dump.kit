@@ -3,6 +3,12 @@ name: generate cron binary
 on:
   release:
     types: [created, published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Version tag'
+        required: true
+        default: '1.0.0'
 
 jobs:
   build-go-binary:
