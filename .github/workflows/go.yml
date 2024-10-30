@@ -1,4 +1,4 @@
-name: cron
+name: generate cron binary
 
 on:
   release:
